@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 5rem;
+    background-color: gray;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.container {
+    margin: 3rem 5%;
+    text-align: center;
+}
+
+.facts {
+    display: flex;
+}
+
+.facts article {
+    text-align: left;
+    margin: 2rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: auto;
+}
+
+.category {
+    background-color: rgb(181, 233, 122);
+    width: max-content;
+    padding: 1rem 2rem;
+    margin: 2rem;
+}

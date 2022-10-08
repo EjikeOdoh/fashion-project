@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+
+html {
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    height: 100vh;
+    text-align: center;
+
+}
+
+header {
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 5px #3A3845;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+   
+small {
+    font-size: 0.75rem;
+}
+
+a {
+    color: #3A3845;
+}
+
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+main a {
+    width: 200px;
+    margin-top: 1rem;
+    padding: 10px;
+    color: white;
+    background-color: #3A3845;
+    border-radius: 5px;
+}
