@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +9,7 @@
     border: 0;
     outline: 0;
     text-decoration: none;
+    font-family: poppins, sans-serif;
 }
 body {
     margin: 1rem 2rem;
@@ -28,4 +33,10 @@ nav {
     top: -80%;
     right: 5px;
     background-color: gray;
+}
+
+button {
+    width: fit-content;
+    padding: 10px;
+    background-color: #3A3845;
 }

@@ -70,3 +70,26 @@ main a {
     background-color: #3A3845;
     border-radius: 5px;
 }
+
+form {
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+}
+
+form button {
+    width: fit-content;
+    background-color: #3A3845;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+form input {
+    border: 1px solid #3A3845;
+    padding: 10px;
+    border-radius: 5px;
+}
