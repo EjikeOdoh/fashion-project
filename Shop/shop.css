@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Mulish:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+body {
+    margin: 1rem 2rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.cart {
+    position: relative;
+    border: 1px solid black;
+    padding: 5px;
+    width: max-content;
+}
+
+.amount {
+    position: absolute;
+    padding: 5px;
+    top: -80%;
+    right: 5px;
+    background-color: #3A3845;
+    color: wheat;
+    border: 2px solid #3A3845;
+    border-radius: 5px;
+    transition: all 400ms ease;
+}
+
+.amount:hover, button:hover {
+    background-color: wheat;
+    color: #3A3845;
+    border-color: #3A3845;
+}
+
+button {
+    width: 70%;
+    padding: 10px;
+    background-color: #3A3845;
+    color: wheat;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    transition: all 400ms ease;
+}
+
+
+article {
+    border: 1px solid #3A3845;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    place-content: center;
+}
+
+.cartItems {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+img {
+    width: 50%;
+}
+
+p {
+    font-size: 14px;
+}
