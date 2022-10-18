@@ -1,5 +1,4 @@
 
-
     let shop = document.querySelector('.item');
 
     shop.innerHTML = item.map(x => {
@@ -14,6 +13,7 @@
                 <button onclick="addToCart(${id})">Add to Cart</button>
                 <button onclick="removeFromCart(${id})">Remove from Cart</button>
                 </div>
+                <span id=dot-${id}></span>
             </article>
         `
     }).join('')
@@ -29,12 +29,15 @@
         else {
             cart.push({id: selectedItem});
         } 
+        
+        let dot = document.getElementById('dot-'+selectedItem);
+        dot.classList.add('dot');
        
         localStorage.setItem('data', JSON.stringify(cart));
 
         updateCart(document.querySelector('.amount'), cart.length)
-    }
 
+    }
 
 
     const removeFromCart = (id) => {
@@ -46,6 +49,9 @@
         else {
             cart = cart.filter(x => x.id !== selectedItem);
         }
+        
+        let dot = document.getElementById('dot-'+selectedItem);
+        dot.classList.remove('dot');
 
         localStorage.setItem('data', JSON.stringify(cart));
 
